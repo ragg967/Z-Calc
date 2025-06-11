@@ -1,4 +1,5 @@
 const std = @import("std");
+
 const stdout = std.io.getStdOut().writer();
 const stdin = std.io.getStdIn().reader();
 
@@ -13,5 +14,5 @@ pub fn main() !void {
 
     errdefer std.debug.print("YOU SUCK", .{});
 
-    try stdout.print("You inputed:\n> {s}\n", .{input});
+    try stdout.print("You inputted:\n> {s}\n", .{input});
 }
