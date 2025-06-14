@@ -6,7 +6,7 @@ pub fn build(b: *std.Build) void {
 
     // Create the executable
     const exe = b.addExecutable(.{
-        .name = "Z_Calc",
+        .name = "Z-Calc",
         .root_source_file = b.path("src/main.zig"),
         .target = target,
         .optimize = optimize,
